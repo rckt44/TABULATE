@@ -1,0 +1,9 @@
+
+/*web link=https://support.sas.com/resources/papers/proceedings17/1482-2017.pdf*/
+
+proc tabulate data=SGF17;
+ class type approach;
+ table n, type*approach;
+ label type = 'Surgery';
+ label approach = 'Technique';
+run;
